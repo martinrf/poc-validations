@@ -5,12 +5,12 @@ const getData = async () => {
   try {
     const data = await fs.readFileSync('date-formats.txt', 'utf8');
     const dataString = data.toString();
-    return dataString.split('\n').filter(x => x).map(x => {
-      let a = x.split(',');
-      return { 'date': a[0], 'format': a[1] };
+    return dataString.split('\n').filter(line => line).map(line => {
+      let row = line.split(',');
+      return { 'date': row[0], 'format': row[1] };
     });
-  } catch(e) {
-    console.log('Error:', e.stack);
+  } catch(error) {
+    console.log('Error:', error.stack);
   }
 };
 
@@ -40,5 +40,7 @@ const writeResults = (data) => {
   writeStream.end();
 };
 
-massParse();
+(
+  async () => { await massParse() }
+)();
 
