@@ -35,12 +35,12 @@ const writeResults = (data) => {
     console.log(`wrote all the array data to file ${pathName}`);
   });
   writeStream.on('error', (err) => {
-    console.error(`There is an error writing the file ${pathName} => ${err}`)
+    console.error(`There is an error writing the file ${pathName} => ${err}`);
   });
   writeStream.end();
 };
 
 (
-  async () => { await massParse() }
+  async () => { await massParse(); }
 )();
 

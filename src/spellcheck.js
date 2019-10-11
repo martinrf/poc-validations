@@ -5,7 +5,7 @@ dictionary(ondictionary);
 
 function ondictionary(err, dict) {
   if (err) {
-    throw err
+    throw err;
   }
 
   const spell = nspell(dict);
