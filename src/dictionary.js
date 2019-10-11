@@ -12,6 +12,6 @@ const customDictionary =() => {
   console.log('emplo ==>', spell.suggest('emplo'));
   console.log('date', spell.suggest('date'));
   console.log('term.', spell.suggest('term.'));
-}
+};
 
 customDictionary();
