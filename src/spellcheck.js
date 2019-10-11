@@ -10,8 +10,8 @@ function ondictionary(err, dict) {
 
   const spell = nspell(dict);
 
-  console.log(spell.correct('employee'));
-  console.log(spell.suggest('employie'));
+  console.log('employee is correct ==>', spell.correct('employee'));
+  console.log('employie suggest ==>', spell.suggest('employie'));
   console.log(spell.correct('id'));
   console.log(spell.correct('emplo'));
   console.log(spell.suggest('emplo'));
