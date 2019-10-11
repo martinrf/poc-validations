@@ -9,3 +9,8 @@ reads date-formats.txt and outputs its validation and formatted value if possibl
 output data in parsing-output.txt
 
 output data is in json format, you can use http://jsoneditoronline.org to prettify the output
+
+For spell-check POCs
+
+    node ./src/dictionary
+    node ./src/spellcheck
