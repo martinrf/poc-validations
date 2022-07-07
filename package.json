@@ -20,7 +20,7 @@
   "dependencies": {
     "dictionary-en-us": "^2.1.1",
     "eslint": "^6.5.1",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "nspell": "^2.1.2"
   },
   "devDependencies": {
